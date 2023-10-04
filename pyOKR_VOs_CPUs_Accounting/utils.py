@@ -15,9 +15,7 @@
 #  limitations under the License.
 #
 
-import configparser
 import os
-import string
 
 __author__ = "Giuseppe LA ROCCA"
 __email__ = "giuseppe.larocca@egi.eu"
