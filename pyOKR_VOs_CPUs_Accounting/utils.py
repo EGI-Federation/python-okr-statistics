@@ -126,7 +126,7 @@ def get_env_settings():
         d["DATE_TO"] = os.environ["DATE_TO"]
         d["SSL_CHECK"] = os.environ["SSL_CHECK"]
 
-    except:
+    except Exception:
         print(colourise("red", "ERROR: os.environment settings not found!"))
 
     return d
