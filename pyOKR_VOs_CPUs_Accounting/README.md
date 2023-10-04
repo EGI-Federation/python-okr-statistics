@@ -1,4 +1,4 @@
-## Calculate the Cloud CPU/h consumed in the specific period
+# Calculate the Cloud CPU/h consumed in the specific period
 
 This python client generates the Cloud|HTC CPU/h of the production VOs registered in the [EGI Operations Portal](https://operations-portal.egi.eu/)
 
