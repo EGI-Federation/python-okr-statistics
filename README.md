@@ -41,3 +41,22 @@ we will have to create a **Google Service Account**.
 * Click on **Continue**
 * The credentials will be created and downloaded as a JSON file
 * Copy the JSON file to your code directory and rename it to `credentials.json`
+
+## Configuring the environment
+
+Use virtualenv to configure the working environment:
+
+```
+]$ virtualenv -p /usr/bin/python3.10 venv
+created virtual environment CPython3.10.12.final.0-64 in 1748ms
+[..]
+
+]$ source venv/bin/activate
+```
+
+Install the libraries `gspread` with pip3:
+
+```
+]$ pip3 install gspread
+[..]
+```
