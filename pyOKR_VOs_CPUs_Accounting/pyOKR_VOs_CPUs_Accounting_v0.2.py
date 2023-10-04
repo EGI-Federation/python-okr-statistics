@@ -27,8 +27,8 @@ import requests
 import warnings
 
 warnings.filterwarnings("ignore")
-from utils import colourise, highlight, get_env_settings
 from Operationsutils import get_VOs_stats, get_VO_metadata
+from utils import colourise, highlight, get_env_settings
 
 __author__ = "Giuseppe LA ROCCA"
 __email__ = "giuseppe.larocca@egi.eu"
