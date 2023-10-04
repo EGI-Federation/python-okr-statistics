@@ -15,27 +15,22 @@
 #  limitations under the License.
 #
 
-# Install requirements:
-# ]$ sudo pip3 install gspread
-# Credentials: python-google-sheet-service-ac@striped-rhino-395008.iam.gserviceaccount.com
-# Google spread-sheet: https://docs.google.com/spreadsheets/d/1B1Sqf1UiN9pY_fGbWe5G1zKA2UzsekOVbLCtiiMFAXk/edit#
-
 import datetime
 import gspread
 import json
+from Operationsutils import get_VOs_stats, get_VO_metadata
 import requests
 from utils import colourise, highlight, get_env_settings
 import warnings
 
 warnings.filterwarnings("ignore")
-from Operationsutils import get_VOs_stats, get_VO_metadata
 
-__author__ = "Giuseppe LA ROCCA"
-__email__ = "giuseppe.larocca@egi.eu"
-__version__ = "$Revision: 0.4"
-__date__ = "$Date: 23/09/2023 10:50:22"
-__copyright__ = "Copyright (c) 2023 EGI Foundation"
-__license__ = "Apache Licence v2.0"
+# __author__ = "Giuseppe LA ROCCA"
+# __email__ = "giuseppe.larocca@egi.eu"
+# __version__ = "$Revision: 0.4"
+# __date__ = "$Date: 23/09/2023 10:50:22"
+# __copyright__ = "Copyright (c) 2023 EGI Foundation"
+# __license__ = "Apache Licence v2.0"
 
 
 def init_GWorkSheet(env):
