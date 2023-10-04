@@ -1,4 +1,6 @@
-# Calculate the Cloud CPU/h consumed in the specific period
+# pyOKR_VOs_CPUs_Accounting
+
+## Calculate the Cloud CPU/h consumed in the specific period
 
 This python client generates the Cloud CPU/h of the production VOs registered in the [EGI Operations Portal](https://operations-portal.egi.eu/)
 
@@ -39,7 +41,7 @@ Log Level = INFO
 
 The VO statistics are updated in the Google worksheet `Accounting Cloud CPU/h`
 
-# Calculate the HTC CPU/h consumed in the specific period
+## Calculate the HTC CPU/h consumed in the specific period
 
 This python client generates the HTC CPU/h of the production VOs registered in the [EGI Operations Portal](https://operations-portal.egi.eu/)
 
