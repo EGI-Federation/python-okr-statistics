@@ -15,22 +15,14 @@
 #  limitations under the License.
 #
 
-# Install requirements:
-# ]$ sudo pip3 install gspread
-# Credentials: python-google-sheet-service-ac@striped-rhino-395008.iam.gserviceaccount.com
-# Google spread-sheet: https://docs.google.com/spreadsheets/d/1B1Sqf1UiN9pY_fGbWe5G1zKA2UzsekOVbLCtiiMFAXk/edit#
-
 import datetime
+import gspread
 import json
+import requests
 import warnings
 
-import gspread
-import requests
-
 warnings.filterwarnings("ignore")
-from Operationsutils import get_VO_metadata, get_VOs_stats
-
-from utils import colourise, get_env_settings, highlight
+from utils import colourise, get_env_settings
 
 __author__ = "Giuseppe LA ROCCA"
 __email__ = "giuseppe.larocca@egi.eu"
