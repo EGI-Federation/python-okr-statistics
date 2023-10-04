@@ -60,3 +60,9 @@ Install the library `gspread` with pip3:
 ]$ pip3 install gspread
 [..]
 ```
+
+## Avaliable clients
+
+This GitHub repository includes clients to calculate:
+
+* [The HTC and Cloud CPU/h of the VOs of the EGI Federation](pyOKR_VOs_CPUs_Accounting)
