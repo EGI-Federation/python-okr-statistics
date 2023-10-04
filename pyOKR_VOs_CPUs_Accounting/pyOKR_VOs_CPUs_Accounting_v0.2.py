@@ -16,21 +16,23 @@
 #
 
 import datetime
-import gspread
 import json
-from Operationsutils import get_VOs_stats, get_VO_metadata
-import requests
-from utils import colourise, highlight, get_env_settings
 import warnings
+
+import gspread
+import requests
+from Operationsutils import get_VO_metadata, get_VOs_stats
+
+from utils import colourise, get_env_settings, highlight
 
 warnings.filterwarnings("ignore")
 
-# __author__ = "Giuseppe LA ROCCA"
-# __email__ = "giuseppe.larocca@egi.eu"
-# __version__ = "$Revision: 0.4"
-# __date__ = "$Date: 23/09/2023 10:50:22"
-# __copyright__ = "Copyright (c) 2023 EGI Foundation"
-# __license__ = "Apache Licence v2.0"
+ __author__ = "Giuseppe LA ROCCA"
+ __email__ = "giuseppe.larocca@egi.eu"
+ __version__ = "$Revision: 0.4"
+ __date__ = "$Date: 23/09/2023 10:50:22"
+ __copyright__ = "Copyright (c) 2023 EGI Foundation"
+ __license__ = "Apache Licence v2.0"
 
 
 def init_GWorkSheet(env):
