@@ -36,7 +36,7 @@ we will have to create a **Google Service Account**.
 * Search for Google Drive API and click on **Enable**
 * Search for the Google Sheets API and click on **Enable**
 * Click on **Create Credentials**
-* Select **Google Drive API** as the API and "Web server"
+* Select **Google Drive API** as the API and Web server
 * Name the service account, then grant it a **Project** role with **Editor** access
 * Click on **Continue**
 * The credentials will be created and downloaded as a JSON file
@@ -46,7 +46,7 @@ we will have to create a **Google Service Account**.
 
 Use virtualenv to configure the working environment:
 
-```
+```shell
 ]$ virtualenv -p /usr/bin/python3.10 venv
 created virtual environment CPython3.10.12.final.0-64 in 1748ms
 [..]
@@ -54,9 +54,9 @@ created virtual environment CPython3.10.12.final.0-64 in 1748ms
 ]$ source venv/bin/activate
 ```
 
-Install the libraries `gspread` with pip3:
+Install the library `gspread` with pip3:
 
-```
+```shell
 ]$ pip3 install gspread
 [..]
 ```
