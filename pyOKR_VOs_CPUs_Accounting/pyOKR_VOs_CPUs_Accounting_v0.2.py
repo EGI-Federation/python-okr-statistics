@@ -1,26 +1,24 @@
 #!/usr/bin/env python3
 #
-# MIT License
+#  Copyright 2023 EGI Foundation
 #
-# Copyright (c) 2023 The authors
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
 #
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
+# http://www.apache.org/licenses/LICENSE-2.0
 #
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
 #
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+
+# Install requirements:
+# ]$ sudo pip3 install gspread
+# Credentials: python-google-sheet-service-ac@striped-rhino-395008.iam.gserviceaccount.com
+# Google spread-sheet: https://docs.google.com/spreadsheets/d/1B1Sqf1UiN9pY_fGbWe5G1zKA2UzsekOVbLCtiiMFAXk/edit#
 
 import datetime
 import json
@@ -28,18 +26,18 @@ import warnings
 
 import gspread
 import requests
-from operationsutils import get_VO_metadata, get_VOs_stats
+
+warnings.filterwarnings("ignore")
+from Operationsutils import get_VO_metadata, get_VOs_stats
 
 from utils import colourise, get_env_settings, highlight
 
-warnings.filterwarnings("ignore")
-
-# __author__ = "Giuseppe LA ROCCA"
-# __email__ = "giuseppe.larocca@egi.eu"
-# __version__ = "$Revision: 0.4"
-# __date__ = "$Date: 23/09/2023 10:50:22"
-# __copyright__ = "Copyright (c) 2023 EGI Foundation"
-# __license__ = "Apache Licence v2.0"
+__author__ = "Giuseppe LA ROCCA"
+__email__ = "giuseppe.larocca@egi.eu"
+__version__ = "$Revision: 0.4"
+__date__ = "$Date: 23/09/2023 10:50:22"
+__copyright__ = "Copyright (c) 2023 EGI Foundation"
+__license__ = "Apache Licence v2.0"
 
 
 def init_GWorkSheet(env):
@@ -80,7 +78,7 @@ def connect(env):
             "- Fetching accounting records from: %s" % env["ACCOUNTING_SERVER_URL"],
         )
 
-    curl = requests.get(url=_url, verify=True)
+    curl = requests.get(url=_url, headers=headers, verify=True)
     data = curl.json()
 
     return data
