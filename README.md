@@ -33,7 +33,7 @@ we will have to create a **Google Service Account**.
 * Head over to [Google developer console](https://console.developers.google.com/) and click on **Create Project**
 * Fill in the required fields and click on **Create**
 * Click on **Enable API and Services**
-* Search for Google Drive API and click on **Enable** 
+* Search for Google Drive API and click on **Enable**
 * Search for the Google Sheets API and click on **Enable**
 * Click on **Create Credentials**
 * Select **Google Drive API** as the API and "Web server"
