@@ -1,6 +1,6 @@
-This python client generates the Cloud|HTC CPU/h of the production VOs registered in the [EGI Operations Portal](https://operations-portal.egi.eu/)
-
 ## Calculate the Cloud CPU/h consumed in the specific period
+
+This python client generates the Cloud|HTC CPU/h of the production VOs registered in the [EGI Operations Portal](https://operations-portal.egi.eu/)
 
 Edit the `openrc.sh`, configure the `scope=cloud` and the specify the `ACCOUNTING_METRIC` to be calculated
 
