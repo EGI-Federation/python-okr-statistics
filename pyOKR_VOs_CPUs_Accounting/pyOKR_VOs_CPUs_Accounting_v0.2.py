@@ -15,12 +15,13 @@
 #  limitations under the License.
 #
 
-import datetime
-import gspread
 import json
-import requests
-from utils import colourise, get_env_settings
 import warnings
+
+import gspread
+import requests
+
+from utils import colourise, get_env_settings
 
 warnings.filterwarnings("ignore")
 
