@@ -19,10 +19,10 @@ import datetime
 import gspread
 import json
 import requests
+from utils import colourise, get_env_settings
 import warnings
 
 warnings.filterwarnings("ignore")
-from utils import colourise, get_env_settings
 
 __author__ = "Giuseppe LA ROCCA"
 __email__ = "giuseppe.larocca@egi.eu"
